@@ -1,0 +1,150 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: pacifico, "SF Pro Display"sans-serif;
+    font-size: 10px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: url(../img/bg1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#overlay {
+    background: rgba(42, 38, 61, 0.82);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#text {
+    margin: 0;
+}
+
+.slogan {
+    text-align: center;
+    font-family: Pacifico;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 84px;
+    letter-spacing: 0em;
+    margin-top: 14px;
+}
+
+.one {
+    color: white;
+}
+
+.two {
+    color: #fcb371;
+}
+
+p {
+    font-family: "SF Pro Display Regular";
+    color: white;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#button {
+    display: flex;
+}
+
+button {
+    background-color: rgba(252, 179, 113, 0);
+    color: #fcb371;
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: #fcb371;
+    font-family: Pacifico;
+    margin-top: 30px;
+    transition: background 0.8s;
+}
+
+.tombol-satu {
+    padding: 12px 53px 13px 53px;
+    margin-right: 13px;
+    text-align: center;
+    flex-direction: row;
+}
+
+.tombol-dua {
+    padding: 12px 47px 13px 48px;
+}
+
+button:hover {
+    color: white;
+    background-color: rgba(252, 179, 113, 1);
+}
+
+button:active {
+    background-color: #fda151;
+    background-size: 100%;
+    transition: background 0.2s;
+}
+
+
+@media (max-width:360px) {
+    .slogan {
+        font-size: 26px;
+        line-height: 42px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    button {
+        font-size: 10px ;
+        align-content: center;
+        box-sizing: border-box;
+    }
+}

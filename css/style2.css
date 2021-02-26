@@ -1,0 +1,150 @@
+body {
+    background-image: url(../img/bg2.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(42, 38, 61, 0.82);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#text {
+    max-width: 768px;
+}
+
+h1 {
+    color: white;
+    font-family: Pacifico;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+p {
+    font-family: 'SF Pro Display Regular';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FCB371;
+}
+
+.rotate {
+    transform: rotate(-180deg);
+    transition-duration: 1.5s;
+}
+
+#back-btn {
+    align-self: flex-start;
+    margin-left: 56px;
+}
+
+.rotate {
+    -ms-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.normal {
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transition-duration:1s;
+    transition-timing-function: ease-in-out;
+}
+
+@media (max-width:280px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    img {
+        width: 50%;
+    }
+
+    #back-btn {
+        margin-left: 30px;
+        align-self: flex-start;
+    }
+}
+
+@media (max-width:360px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    #text {
+        max-width: 280px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    img {
+        width: 75%;
+    }
+
+    #back-btn {
+        margin-left: 30px;
+        align-self: flex-start;
+    }
+}
+
+@media (min-width:1440px) {
+    h1 {
+        font-size: 70px;
+    }
+
+    p {
+        font-size: 38px;
+    }
+
+    img {
+        width: 150%;
+    }
+
+    #back-btn {
+        margin-left: 100px;
+        align-self: flex-start;
+    }
+}
