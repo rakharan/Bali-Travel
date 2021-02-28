@@ -107,6 +107,7 @@ button {
     font-family: Pacifico;
     margin-top: 30px;
     transition: background 0.8s;
+    cursor:pointer;
 }
 
 .tombol-satu {
