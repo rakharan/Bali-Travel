@@ -1,66 +1,36 @@
-html {
-    box-sizing: border-box;
-}
+ html {
+     box-sizing: border-box;
+ }
 
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
+ *,
+ *:before,
+ *:after {
+     box-sizing: inherit;
+ }
 
-body {
-    margin: 0;
-    font-family: pacifico, "SF Pro Display"sans-serif;
-    font-size: 10px;
-}
+ body {
+     margin: 0;
+     background-image: url(../img/bg1.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 100vh;
+ }
 
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    background: url(../img/bg1.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+ #main {
+     background-color: rgba(42, 38, 61, 0.82);
+     width: 100%;
+     height: 100%;
+ }
 
-#overlay {
-    background: rgba(42, 38, 61, 0.82);
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-}
-
-.container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.container{
+    height:100vh;
+    display:flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-#text {
-    margin: 0;
-}
-
-.slogan {
-    text-align: center;
+.text h1{
     font-family: Pacifico;
     font-size: 48px;
     font-style: normal;
@@ -68,17 +38,18 @@ img {
     line-height: 84px;
     letter-spacing: 0em;
     margin-top: 14px;
+
 }
 
-.one {
+.text .one {
     color: white;
 }
 
-.two {
+.text .two {
     color: #fcb371;
 }
 
-p {
+.text p {
     font-family: "SF Pro Display Regular";
     color: white;
     font-size: 14px;
@@ -86,16 +57,7 @@ p {
     font-weight: 400;
     line-height: 17px;
     letter-spacing: 0em;
-    text-align: center;
     margin-top: 14px;
-}
-
-a {
-    text-decoration: none;
-}
-
-#button {
-    display: flex;
 }
 
 button {
@@ -105,21 +67,18 @@ button {
     border-width: 2px;
     border-color: #fcb371;
     font-family: Pacifico;
-    margin-top: 30px;
+    margin-top: 15px;
     transition: background 0.8s;
-    cursor:pointer;
+    width:186px;
 }
 
 .tombol-satu {
-    padding: 12px 53px 13px 53px;
-    margin-right: 13px;
-    text-align: center;
-    flex-direction: row;
+    padding: 12px 0 13px 0;
 }
 
 .tombol-dua {
-    padding: 12px 47px 13px 48px;
-}
+    padding: 12px 0 13px 0;
+} 
 
 button:hover {
     color: white;
@@ -130,22 +89,4 @@ button:active {
     background-color: #fda151;
     background-size: 100%;
     transition: background 0.2s;
-}
-
-
-@media (max-width:360px) {
-    .slogan {
-        font-size: 26px;
-        line-height: 42px;
-    }
-
-    p {
-        font-size: 10px;
-    }
-
-    button {
-        font-size: 10px ;
-        align-content: center;
-        box-sizing: border-box;
-    }
 }
